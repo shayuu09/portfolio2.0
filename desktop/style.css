@@ -16,21 +16,13 @@ body {
   background-color: rgba(50, 74, 89, 1);
 }
 
-#cover {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh);
-  left: 0%;
-  top: 0%;
-  background-color:red;
-}
-
 /* background */
 #coverbg {
   position: absolute;
   width: 100%;
   height: auto;
-  display: none;
+  top: 0%;
+  left: 0%;
 }
 
 /* me */
@@ -39,7 +31,7 @@ body {
   width: 57.56%;
   height: auto;
   left: 1.1%;
-  top: 15.4%;
+  top: 15.23%;
 }
 
 #title {
@@ -48,7 +40,6 @@ body {
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  width: 43.88%;
   height: auto;
   left: 53.47%;
   top: 19.62%;
@@ -88,10 +79,9 @@ h3 {
 #spirals {
   position: absolute;
   width: 33.1vw;
-  height: auto;
+  height: 36.82vh;
   left: 0%;
   top: 0px;
-
 }
 
 /* content */
@@ -108,7 +98,7 @@ position: absolute;
 width: 94.39vw;
 height: auto;
 left: 5.98vw;
-top: 103.88vh;
+top: 107.88vh;
 }
 
 
@@ -145,4 +135,70 @@ color: #FFFFFF;
   padding: 0px;
   margin: 0px;
 
+}
+
+/* title */
+#worktitle {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+left: 4.02%;
+top: 199.9%;
+  
+}
+
+h4 {
+font-family: 'i eat crayons';
+font-style: normal;
+font-weight: 400;
+font-size: 3.33vw;
+color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/* labels */
+#labels {
+display: flex;
+flex-direction: row;
+align-items: center;
+position: absolute;
+padding: 0px;
+width: 83.33%;
+height: 7.8%;
+left: 0%;
+top: 222.59%;
+}
+
+#labels p {
+  color:rgba(50, 74, 89, 1);
+}
+
+.label {
+align-items: center;
+width: 20.9%;
+height: 100%;
+border: none;
+border-radius: 3vw 3vw 0px 0px;
+}
+
+.selected {
+background: #FFFFFF;
+}
+
+.unselected {
+  background: #D5D5D5;
+}
+
+#carousel {
+position: absolute;
+width: 100%;
+height: 65%;
+left: 0%;
+top: 230.39%;
+background: #FFFFFF;
 }
