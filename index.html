@@ -13,7 +13,15 @@
       const contentDiv = document.getElementById('content');
       const viewportWidth = window.innerWidth;
       if (viewportWidth < 768) {
-        contentDiv.innerHTML = '<p>Mobile content</p>';
+        fetch('mobile/mobile.html')
+        .then(response => response.text())
+        .then(html => {
+          contentDiv.innerHTML = html;
+        })
+        .catch(error => {
+          contentDiv.innerHTML = 'Error loading content';
+          console.error('Error:', error);
+        });
       } else {
         fetch('desktop/desktop.html')
         .then(response => response.text())
