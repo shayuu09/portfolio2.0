@@ -8,114 +8,141 @@
   src: url("fonts/LTInternet-Regular.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(50, 74, 89, 1);
+}
+
+#cover {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh);
+  left: 0%;
+  top: 0%;
+  background-color:red;
 }
 
 /* background */
 #coverbg {
   position: absolute;
-  width: 1451px;
-  height: 1024px;
-  left: 0px;
-  top: 0px;
+  width: 100%;
+  height: auto;
+  display: none;
 }
 
 /* me */
 #coverme {
   position: absolute;
-  width: 829px;
-  height: 868px;
-  left: 16px;
-  top: 156px;
+  width: 57.56%;
+  height: auto;
+  left: 1.1%;
+  top: 15.4%;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 43.88%;
+  height: auto;
+  left: 53.47%;
+  top: 19.62%;
+}
+
+h2 {
+  font-family: "i eat crayons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.66vw;
+
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-family: "i eat crayons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.88vw;
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+h3 {
+  font-family: "LT Internet";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vw;
+
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+
+}
+#spirals {
+  position: absolute;
+  width: 33.1vw;
+  height: auto;
+  left: 0%;
+  top: 0px;
+
+}
+
+/* content */
+
+/* Auto layout */
+#a-content {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8.37vw;
+
+position: absolute;
+width: 94.39vw;
+height: auto;
+left: 5.98vw;
+top: 103.88vh;
 }
 
 
 
-/* title */
-
-/* Auto layout */
-#title {
+/* me */
+#polaroid {
   
+width: 38.31vw;
+height: auto;
+filter: drop-shadow(-0.69vw 1.39vw 0.69vw rgba(0, 0, 0, 0.25));
+transform: rotate(5deg);
+}
+
+
+/* text */
+#a-text {  
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-position: absolute;
-width: 632px;
-height: 559px;
-left: 770px;
-top: 201px;
+
+width: 46.18vw;
+height: auto;
 }
 
-
-
-/* i am */
-/* cray96
-
-desktop: cover subtitle, main title
-mobile: name
-*/
-h2 {
-font-family: "i eat crayons";
-font-style: normal;
-font-weight: 400;
-font-size: 96px;
-line-height: 135px;
-
-color: #FFFFFF;
-}
-
-
-/* Inside auto layout */
-
-
-/* alex he */
-/* cray200
-
-desktop: cover name
-*/
-h1 {
-font-family: "i eat crayons";
-font-style: normal;
-font-weight: 400;
-font-size: 200px;
-line-height: 282px;
-
-color: #FFFFFF;
-}
-/* identical to box height */
-
-
-/* Inside auto layout */
-
-
-/* graphic | web | fashion designer */
-
-/* inter64
-
-desktop: cover body
-
-*/
-h3 {
+p {
+  
 font-family: "LT Internet";
 font-style: normal;
 font-weight: 400;
-font-size: 64px;
-line-height: 71px;
+font-size: 2.5vw;
 
 color: #FFFFFF;
-  
-}
+  padding: 0px;
+  margin: 0px;
 
-/* Inside auto layout */
-
-/* spirals */
-#spirals {
-position: absolute;
-width: 476.47px;
-height: 377.31px;
-left: 970px;
-top: 0px;
-  
 }
