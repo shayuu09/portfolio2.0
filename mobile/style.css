@@ -29,8 +29,8 @@ border-radius: 0px 0px 3vw 3vw;
 display: flex;
 flex-direction: row;
   align-items: center;
-padding-left: 15%;
-gap: 10%;
+padding-left: 10%;
+gap: 7%;
 }
 
 #header h4 {
@@ -80,7 +80,7 @@ gap: 10%;
 #contact {
   position: relative;
   width: 100%;
-  background-color:red;
+  height: 100vh;
   left: 0vw;
   top: 100vh;
 }
@@ -248,19 +248,18 @@ background: #FFFFFF;
 }
 
 #mail {
-position: relative;
+position: absolute;
 width: 80.25%;
 height: auto;
 left: 19.73%;
-  top: 30%;
+  top: 10%;
 }
 
 #insta {
-position: relative;
-width: 50%;
+position: absolute;
+width: 70%;
 height: auto;
-left: ;
-  top: -50%;
+  top: 41.5%;
 }
 
 /* content */
@@ -274,7 +273,7 @@ padding: 0px;
 width: 90%;
 position: absolute;
 left: 8%;
-top: 35%;
+top: 15%;
 }
 
 a {
