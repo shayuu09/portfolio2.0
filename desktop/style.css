@@ -16,13 +16,46 @@ body {
   background-color: rgba(50, 74, 89, 1);
 }
 
-/* background */
-#coverbg {
+#everything {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#cover {
+  background: url(images/background.png);
+  background-size: cover;
   position: absolute;
   width: 100%;
-  height: auto;
-  top: 0%;
-  left: 0%;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+}
+
+#aboutme {
+  width: 100%;
+  position: relative;
+  left: 0vw;
+  top: 100vh;
+  margin-bottom: 10%;
+}
+
+#myworks {
+  position: relative;
+  width: 100%;
+  left: 0vw;
+  top: 100vh;
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  left: 0vw;
+  top: 100vh;
 }
 
 /* me */
@@ -30,27 +63,25 @@ body {
   position: absolute;
   width: 57.56%;
   height: auto;
-  left: 1.1%;
-  top: 15.23%;
+  left: 1.1vw;
+  bottom: 0vh;
 }
 
 #title {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  position: absolute;
   height: auto;
-  left: 53.47%;
-  top: 19.62%;
+  left: 50vw;
+  bottom: 30vh;
 }
 
 h2 {
   font-family: "i eat crayons";
   font-style: normal;
-  font-weight: 400;
   font-size: 5.66vw;
-
   color: #FFFFFF;
   padding: 0px;
   margin: 0px;
@@ -59,7 +90,6 @@ h2 {
 h1 {
   font-family: "i eat crayons";
   font-style: normal;
-  font-weight: 400;
   font-size: 11.88vw;
   color: #FFFFFF;
   padding: 0px;
@@ -68,9 +98,7 @@ h1 {
 h3 {
   font-family: "LT Internet";
   font-style: normal;
-  font-weight: 400;
   font-size: 4vw;
-
   color: #FFFFFF;
   padding: 0px;
   margin: 0px;
@@ -80,6 +108,9 @@ h3 {
   position: absolute;
   width: 33.1vw;
   height: 36.82vh;
+  top: 0%;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* content */
@@ -92,11 +123,11 @@ align-items: center;
 padding: 0px;
 gap: 6.37vw;
 
-position: absolute;
+position: relative;
 width: 94.39vw;
 height: auto;
-left: 3.98vw;
-top: 107.88vh;
+left: 3.98%;
+top: 2%;
 }
 
 
@@ -132,7 +163,6 @@ font-size: 2.5vw;
 color: #FFFFFF;
   padding: 0px;
   margin: 0px;
-
 }
 
 /* title */
@@ -142,9 +172,9 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: absolute;
+position: relative;
 left: 4.02%;
-top: 199.9%;
+top: 0%;
   
 }
 
@@ -164,12 +194,13 @@ color: #FFFFFF;
 display: flex;
 flex-direction: row;
 align-items: center;
-position: absolute;
+position: relative;
 padding: 0px;
 width: 83.33%;
 height: 7.8%;
 left: 0%;
-top: 222.59%;
+top: 5%;
+  margin-top: 3%;
 }
 
 #labels p {
@@ -193,28 +224,27 @@ background: #FFFFFF;
 }
 
 #carousel {
-position: absolute;
+position: relative;
 width: 100%;
-height: 65%;
+height: 65vh;
 left: 0%;
-top: 230.39%;
+top: 0%;
 background: #FFFFFF;
+  margin-bottom: 3%;
 }
 
 #mail {
-position: absolute;
+position: relative;
 width: 51.25%;
 height: auto;
 left: 48.73%;
-top: 311.59%;
 }
 
 #insta {
-position: absolute;
+position: relative;
 width: 43%;
 height: auto;
-left: 40%;
-top: 369.20%;
+left: -10%;
 }
 
 /* content */
@@ -225,8 +255,8 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-
+width: 90%;
 position: absolute;
 left: 8%;
-top: 335.35%;
+top: 35%;
 }
