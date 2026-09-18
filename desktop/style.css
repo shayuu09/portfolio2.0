@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "i eat crayons";
+  src: url("fonts/i-eat-crayons.ttf");
+}
+
+@font-face {
+  font-family: "LT Internet";
+  src: url("LTInternet-Regular.ttf");
+}
+
+/* background */
+#coverbg {
+  position: absolute;
+  width: 1451px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+}
+
+/* me */
+#coverme {
+  position: absolute;
+  width: 829px;
+  height: 868px;
+  left: 16px;
+  top: 156px;
+}
+
+
+
+/* title */
+
+/* Auto layout */
+#title {
+  
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 632px;
+height: 559px;
+left: 770px;
+top: 201px;
+}
+
+
+
+/* i am */
+/* cray96
+
+desktop: cover subtitle, main title
+mobile: name
+*/
+h2 {
+font-family: "i eat crayons";
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 135px;
+
+color: #FFFFFF;
+}
+
+
+/* Inside auto layout */
+
+
+/* alex he */
+/* cray200
+
+desktop: cover name
+*/
+h1 {
+font-family: "i eat crayons";
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 282px;
+
+color: #FFFFFF;
+}
+/* identical to box height */
+
+
+/* Inside auto layout */
+
+
+/* graphic | web | fashion designer */
+
+/* inter64
+
+desktop: cover body
+
+*/
+h3 {
+font-family: "LT Internet";
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 71px;
+
+color: #FFFFFF;
+  
+}
+
+/* Inside auto layout */
+
+/* spirals */
+#spirals {
+position: absolute;
+width: 476.47px;
+height: 377.31px;
+left: 970px;
+top: 0px;
+  
+}

@@ -1,1 +1,29 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>alex he</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      // https://www.w3tutorials.net/javascript-tutorial/using-javascript-to-build-responsive/
+      const contentDiv = document.getElementById('content');
+      const viewportWidth = window.innerWidth;
+      if (viewportWidth < 768) {
+        contentDiv.innerHTML = '<p>Mobile content</p>';
+      } else {
+        fetch('desktop/desktop.html')
+        .then(response => response.text())
+        .then(html => {
+          contentDiv.innerHTML = html;
+        })
+        .catch(error => {
+          contentDiv.innerHTML = 'Error loading content';
+          console.error('Error:', error);
+        });
+      }
+    </script>
+  </body>
+</html>
