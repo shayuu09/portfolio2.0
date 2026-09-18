@@ -5,7 +5,11 @@
 
 @font-face {
   font-family: "LT Internet";
-  src: url("LTInternet-Regular.ttf");
+  src: url("fonts/LTInternet-Regular.ttf");
+}
+
+body {
+  background-color: rgba(50, 74, 89, 1);
 }
 
 /* background */
@@ -37,7 +41,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-
 position: absolute;
 width: 632px;
 height: 559px;
