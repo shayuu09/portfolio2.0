@@ -11,8 +11,16 @@
     <script>
       // https://www.w3tutorials.net/javascript-tutorial/using-javascript-to-build-responsive/
       const contentDiv = document.getElementById('content');
+      const initialWidth = window.innerWidth;
+      resize(initialWidth);
+      window.addEventListener('resize', debounce(function() {
+    console.log('Resized');
       const viewportWidth = window.innerWidth;
-      if (viewportWidth < 768) {
+      resize(viewportWidth);
+        }, 300));
+      
+      function resize(viewportWidth) {
+        if (viewportWidth < 1080) {
         fetch('mobile/mobile.html')
         .then(response => response.text())
         .then(html => {
@@ -33,9 +41,9 @@
           console.error('Error:', error);
         });
       }
-      
+      }
       // Debouncing function
-function debounce(func, delay) {
+    function debounce(func, delay) {
     let timer;
     return function() {
         const context = this;
