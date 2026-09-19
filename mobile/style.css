@@ -16,6 +16,23 @@ body {
   background-color: rgba(50, 74, 89, 1);
 }
 
+#footer {
+  position: relative;
+  width: 100%;
+  top: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 3vw 3vw 0px 0px;
+  gap: 10%;
+}
+
+#footer p {
+  color: rgba(50, 74, 89, 1);
+}
 
 #header {
 position: fixed;
@@ -88,9 +105,9 @@ gap: 7%;
 /* me */
 #coverme {
   position: absolute;
-  width: 80vw;
+  width: 90vw;
   height: auto;
-  left: 15vw;
+  left: 0vw;
   bottom: 0vh;
 }
 
@@ -259,7 +276,7 @@ left: 19.73%;
 position: absolute;
 width: 70%;
 height: auto;
-  top: 41.5%;
+  bottom: 0%;
 }
 
 /* content */
