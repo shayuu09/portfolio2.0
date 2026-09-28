@@ -257,14 +257,80 @@ background: #FFFFFF;
 }
 
 #carousel {
-position: relative;
-width: 100%;
-height: 65vh;
-left: 0%;
-top: 0%;
-background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 65vh;
+  left: 0%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  top: 0%;
+  background: #FFFFFF;
   margin-bottom: 3%;
-filter: drop-shadow(-0.69vw 1.39vw 0.69vw rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-0.69vw 1.39vw 0.69vw rgba(0, 0, 0, 0.25));
+}
+
+#carousel::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+      from {translate: 0;}
+      to {translate: -100%;}
+      }
+
+.track {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  animation: scroll 25s infinite linear;
+  padding-right: 2%;
+}
+/*
+.track:hover {
+  animation-play-state: paused;
+}
+add later
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3vw;
+  
+  width: 80vw;
+  background: white;
+  filter: drop-shadow(0vw 0.5vw 0.5vw rgba(0, 0, 0, 0.05));
+  padding: 1%;
+  transition-duration: 0.5s;
+}
+
+.card img {
+  border-radius: 2vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.card:hover {
+  filter: drop-shadow(0vw 0.5vw 0.5vw rgba(0, 0, 0, 0.3));
+}
+
+.card h2 {
+  color: rgba(50, 74, 89, 1);
+  font-size: 7vw;
+}
+
+.card h3 {
+  color: rgba(50, 74, 89, 1);
+  font-weight: 400;
+  font-size: 5vw;
+}
+
+.card p {
+  color: rgba(50, 74, 89, 1);
+  font-size: 4vw;
 }
 
 #mail {
