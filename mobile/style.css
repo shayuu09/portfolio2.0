@@ -286,7 +286,7 @@ background: #FFFFFF;
   flex-direction: row;
   gap: 1%;
   animation: scroll 25s infinite linear;
-  padding-right: 2%;
+  padding-right: 83vw;
 }
 /*
 .track:hover {
