@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>alex he</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
         })
         .catch(error => {
           contentDiv.innerHTML = 'Error loading content';
-          console.error('Error:', error);
+          console.error('Error: error loading desktop version', error);
         });
       } else {
         fetch('desktop/desktop.html')
@@ -40,7 +41,7 @@
         })
         .catch(error => {
           contentDiv.innerHTML = 'Error loading content';
-          console.error('Error:', error);
+          console.error('Error: error loading desktop version', error);
         });
       }
       }
@@ -60,6 +61,28 @@
 window.addEventListener('resize', debounce(function() {
     console.log('Resized');
 }, 300));
+      
+      // Source - https://stackoverflow.com/a/69190644
+      // Posted by Johannes Ewald
+      // Retrieved 2026-09-29, License - CC BY-SA 4.0
+
+function executeScriptElements(containerElement) {
+  const scriptElements = containerElement.querySelectorAll("script");
+
+  Array.from(scriptElements).forEach((scriptElement) => {
+    const clonedElement = document.createElement("script");
+
+    Array.from(scriptElement.attributes).forEach((attribute) => {
+      clonedElement.setAttribute(attribute.name, attribute.value);
+    });
+    
+    clonedElement.text = scriptElement.text;
+
+    scriptElement.parentNode.replaceChild(clonedElement, scriptElement);
+  });
+}
+
+      executeScriptElements(contentDiv);
     </script>
   </body>
 </html>
